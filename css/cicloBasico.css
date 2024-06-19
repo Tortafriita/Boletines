@@ -3,14 +3,14 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-    background-color: #1269db;
+    background-color: #fdfd96;
 }
 
 aside {
     width: 200px;
     padding: 20px;
-    background-color: #f4f4f4;
-    border-right: 1px solid #ccc;
+    background-color: #081338;
+    border-right: 8px solid rgb(13, 151, 175);
 }
 
 aside input {
@@ -18,18 +18,20 @@ aside input {
 }
 
 aside label {
+    font-size: 20px;
     display: block;
     padding: 10px;
     cursor: pointer;
-    background-color: #007BFF;
-    color: rgb(250, 29, 29);
+    background-color: #71b6ff;
+    color: rgb(3, 23, 70);
     border-radius: 5px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 aside label:hover {
-    background-color: #0056b3;
+    background-color: #ffd106;
+    color: black;
 }
 
 main {
@@ -43,6 +45,42 @@ main {
 
 #content1:checked-main #content-1,
 #content2:checked-main #content-2,
-#content3:checked-main #content-3{
+#content3:checked-main #content-3,
+#content4:checked-main #content-4,
+#content5:checked-main #content-5,
+#content6:checked-main #content-6,
+#content7:checked-main #content-7,
+#content8:checked-main #content-8,
+#content9:checked-main #content-9,
+#content10:checked-main #content-10,
+#content11:checked-main #content-11,
+#content12:checked-main #content-12,
+#content13:checked-main #content-13,
+#content14:checked-main #content-14,
+#content15:checked-main #content-15,
+#content16:checked-main #content-16,
+#content17:checked-main #content-17,
+#content18:checked-main #content-18,
+#content19:checked-main #content-19,
+#content20:checked-main #content-20,
+#content21:checked-main #content-21,
+#content22:checked-main #content-22,
+#content23:checked-main #content-23,
+#content24:checked-main #content-24,
+#content25:checked-main #content-25,
+#content26:checked-main #content-26,
+#content27:checked-main #content-27,
+#content28:checked-main #content-28,
+#content29:checked-main #content-29,
+#content30:checked-main #content-30{
     display: block;
+}
+
+img{
+    height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
