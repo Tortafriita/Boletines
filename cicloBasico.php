@@ -8,6 +8,7 @@
 </head>
 <body>
     <aside>
+        <img src="..\boletines\imagenes\logoc.jpg">
         <input type="radio" name="content" id="content1" checked>
         <label for="content1">Contenido 1</label>
         <input type="radio" name="content" id="content2">
@@ -18,16 +19,14 @@
 
     <main>
         <div class="content" id="content-1">
-            <p>Este es el contenido 1.</p>
+            <p>1º1</p>
         </div>
         <div class="content" id="content-2">
-            <p>Este es el contenido 2.</p>
+            <p>1º2.</p>
         </div>
         <div class="content" id="content-3">
-            <p>Este es el contenido 3.</p>
+            <p>1º3</p>
         </div>
-    </main>
-
-    <div class="color">hola</div>
+</main>
 </body>
 </html>
