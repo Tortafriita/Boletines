@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=utf-8">
 <title>Boletines</title>
-<link rel="stylesheet" type="text/css" href= "..\boletines\css\Login.css">
+<link rel="stylesheet" type="text/css" href= "css\login.css">
 <link rel="icon" href="img\logoc.jpg" type="image/png" size="16x16">
 </head>
 <body>
