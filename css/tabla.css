@@ -1,0 +1,32 @@
+table{
+	background-color: rgb(177, 198, 243);
+	text-align: left;
+	border-collapse: collapse;/*Quita los espacios entre celdas */
+	width: 800px;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{/* Estilizamos el encabezado de la tabla */
+	background-color: #243063;
+	border-bottom: solid 5px #0f1336;
+	color: white;
+}
+
+.col{
+    color: #03093f;
+}
+
+tr:nth-child(even){ /* Estilo para las filas que sean pares */
+	background-color: #9fa4ee;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
