@@ -1,0 +1,32 @@
+<?php
+// Inicia una sesión o reanuda la sesión actual basada en un identificador de sesión pasado a través de una solicitud HTTP.
+session_start();
+
+// Incluye el archivo 'db.php' que se espera que contenga la configuración y conexión a la base de datos.
+include 'db.php';
+
+// Verifica si la solicitud actual es una solicitud POST, que es cuando se envían datos de un formulario.
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    // Verifica si se ha enviado el parámetro 'alumnos' y si no está vacío.
+    // 'alumnos' se espera que sea un array de IDs de alumnos seleccionados.
+    if (isset($_POST['alumnos']) && !empty($_POST['alumnos'])) {
+        // Asigna el array de IDs de alumnos seleccionados a la variable $alumnosSeleccionados.
+        $alumnosSeleccionados = $_POST['alumnos'];
+
+        // Recorre cada ID de alumno seleccionado en el array $alumnosSeleccionados.
+        foreach ($alumnosSeleccionados as $idAlumno) {
+            // Aquí puedes realizar alguna acción con los IDs seleccionados.
+            // En este caso, simplemente se muestra el ID del alumno seleccionado.
+            // La función htmlspecialchars() convierte caracteres especiales en entidades HTML para evitar ataques XSS.
+            echo "ID del alumno seleccionado: " . htmlspecialchars($idAlumno) . "<br>";
+        }
+    } else {
+        // Mensaje mostrado si no se seleccionaron alumnos.
+        echo "No se seleccionaron alumnos.";
+    }
+} else {
+    // Mensaje mostrado si el método de solicitud no es POST.
+    echo "Método de solicitud no permitido.";
+}
+?>
